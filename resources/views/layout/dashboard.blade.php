@@ -8,12 +8,14 @@
   <title>@yield('title')</title>
 </head>
 <body>
-  <div>
-    @yield('aside')
+  <div class="flex">
+    <x-sidebar></x-sidebar>
 
-    @yield('navbar')
+    <div class="flex flex-col w-full">
+      <x-navbar></x-navbar>
 
-    @yield('page')
+      @yield('page')
+    </div>
   </div>
 </body>
 </html>
