@@ -17,3 +17,7 @@ Route::get('/registrasi', function() {
 Route::get('/dashboard', function() {
     return view('pages.home');
 });
+
+Route::get('/books', function() {
+    return view('pages.books');
+});
